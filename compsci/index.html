@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="index.js"></script>
         <title>
             Dobritoiu David-Constantin - Computer Science
         </title>
@@ -18,6 +19,7 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About Me</a></li>
+                <li><button onclick="darkMode()">Toggle dark mode</button></li>
             </ul>
         </div>
     </header>
@@ -28,25 +30,26 @@
                 <img src="main_wp.jpg" alt="Main image" title="Main image">
             </article>
             <article class="main_text">
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2>Welcome to my hub!</h2>
+                <p>Down below you can see a few of my hobbies, as well as a few words about myself!</p>
             </article>
         </div>
     </section>
 
     <ul class="fields">
         <li class="field_1">
-            <h3>Field1</h3>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere maecenas faucibus mollis interdum.</p>
+            <h3>Gaming</h3>
+            <p>I am a huge fan of all types of games, therefore I am working on my own games, little by little. Click the button to see my projects!</p>
             <a href="#" class="button_1">Projects</a>
         </li>
         <li class="field_2">
-            <h3>Field2</h3>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere maecenas faucibus mollis interdum.</p>
+            <h3>Software</h3>
+            <p>I became a fan of software development once I started learning Java, because it opened new paths for me that seemed interesting. Find out my projects below.</p>
             <a href="#" class="button_1">Projects</a>
         </li>
         <li class="field_3">
-            <h3>Field3</h3>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere maecenas faucibus mollis interdum.</p>
+            <h3>Web</h3>
+            <p>You're on my website, therefore, I put some effort into it. This is my first web project, for which you have the source code below. I am planning to create more, depending on my time.</p>
             <a href="#" class="button_1">Projects</a>
         </li>
     </ul>
@@ -55,17 +58,20 @@
         <div class="wrapper">
             <article class="about_me">
                 <h3>About Me</h3>
-                <img src="...">
-                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Penatibus et magnis dis parturient montes, nascetur ridiculu.</p>
-                <p>Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="images/profile.jpg">
+                <p>My name is David-Constantin Dobrițoiu and I am studying Computer Science at Babes-Bolyai University. I am currently in the second year of study and I am still learning.</p>
+                <p>Among my other passions, one would say that I have a penchant for creating games as well as playing them, for web developing, software engineering and constant learning.
+                    I am always open to challenges and constructive feedback. I am open-minded and learn new things quickly.
+                    I want to become a team player and dedicate all my skills and talents to develop high-quality and unique products.</p>
+                <p>I am a student focused on learning new technologies, who's willing to apply them in a company willing to have an intelligent person, problem-solver with great soft skills, who has the ability of finding quick solutions to any problem and is able to place the matter in their own hands.</p>
+                <p>I am also interested in Cybersecurity, although I do not have any clue about it, yet.</p>
             </article>
 
             <article class="skills">
                 <h3>Skills and badges</h3>
                 <div class="skill_wrapper">
                     <p class="skill_quote">
-                        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. </p>
-                    <p class="skill_name">John Doe, Company</p>
+                        Currently, I have passed Python and Object-Oriented Programming LinkedIn skill quiz, having a badge in both. In terms of language, I possess a C2 Cambridge English Certificate, and I know a little bit of French. I am planning to learn more about development, and more about Cybersecurity in the future. This part will be updated according to my progress, so take a look at it sometime. </p>
                 </div>		
             </article>
         </div>
@@ -74,35 +80,13 @@
     <footer>
         <div class="wrapper">
 
-            <!--Twitter-->
+            
+            <!--Socials-->
             <div class="column">
-                <article class="twitter_widget">
-                    <h4>Twitter Updates</h4>
-                    <ul>
-                        <li><strong>@MediaLoot</strong> Curabitur blandit tempus porttitor estibulum venenatis ultricies.</li>
-						<li><strong>@MediaLoot</strong> Curabitur blandit tempus porttitor estibulum venenatis ultricies.</li>
-						<li><strong>@MediaLoot</strong> Curabitur blandit tempus porttitor estibulum venenatis ultricies.</li>
-                    </ul>
-                    <a href="#" class="button_1">Read More</a>
-                </article>
-            </div>
-
-            <!--Newsletter-->
-            <div class="column">
-                <article class="newsletter_widget">
-                    <h4>Newsletter</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat.</p>
-					<form>
-						<input type="text" value="Email Address">
-						<input type="submit" value="Sign Up">
-					</form>
-                </article>
-
-                <!--Socials-->
                 <article class="socials_widget">
                     <h4>Socials</h4>
                     <ul>
-                        <li class="facebook"><a href="#">Facebook</a></li>
+                        <li class="facebook"><a href="https://www.facebook.com/david.constantin.7">Facebook</a></li>
                         <li class="twitter"><a href="#">Twitter</a></li>
                         <li class="tumblr"><a href="#">Instagram</a></li>
                         <li class="linkedin"><a href="#">Linked In</a></li>
@@ -115,18 +99,23 @@
 				<article class="feedback_widget">
 					<h4>Feedback</h4>
 					<form>
-						<input type="text" value="Full Name" name="name">
-						<input type="text" value="Email Address" name="email">
-						<textarea name="message">Your message</textarea>
+						<input type="text" placeholder="Full Name" name="name">
+						<input type="text" placeholder="Email Address" name="email">
+						<textarea name="message" placeholder="Your message"></textarea>
 						<input type="submit" value="Send Message" class="button_1">
 					</form>
 				</article>
 			</div>
 		
-            <!--Copyright Notice-->
-			<p class="copyright_notice">Copyright 2022 © <strong>Dobritoiu David-Constantin</strong>. All Rights Reserved.</p>
-			<div class="logo"><p>Logo</p></div>
+            <!--Logo-->
+            <div class="logo"><p>Logo</p></div>
         </div>
     </footer>
+
+    <section class="copyright">
+        <!--Copyright Notice-->
+			<p class="copyright_notice">Copyright 2022 © <strong>Dobritoiu David-Constantin</strong>. All Rights Reserved.</p>
+			
+    </section>
 
 </html>
