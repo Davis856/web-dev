@@ -1,0 +1,423 @@
+/* Courtesy of https://meyerweb.com/eric/tools/css/reset/ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Before everything else */
+
+body{
+    background: #F9FCFC;
+    color:#666666;
+    font-family:"montserrat";
+    font-size:12px;
+}
+
+p{
+    line-height:150%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"montserrat";
+    font-weight:lighter;
+}
+
+a:link, a:visited{
+    color:rgb(168, 33, 168);
+    text-decoration:none;
+}
+
+.wrapper{
+    width:960px;
+    margin: 0 auto;
+}
+
+
+/* Header section */
+header{
+    height: 130px;
+}
+
+/* Logo part */
+h1.logo a{
+    display:block;
+    width: 400px;
+    height: 90px;
+    background:url('images/logo.png') no-repeat;
+    float:left;
+    margin: 30px 0 0 -150px;
+    text-indent: -5000vw;
+}
+
+/* Navbar */
+header ul{
+    float:right;
+    margin: 45px -100px 0 0;
+}
+
+header li{
+    float:left;
+    width:90px;
+    height:36px;
+    margin: 0 10px 0 0;
+}
+
+header li a{
+    color: rgb(168, 33, 168);;
+    display:block;
+    width:90px;
+    height:36px;
+    text-align:center;
+    font-weight:bold;
+    line-height:36px;
+    border: 1px solid rgb(214, 34, 214);
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	-moz-box-shadow: 0 1px 0 #FFFFFF; -webkit-box-shadow: 0 1px 0 #FFFFFF; box-shadow: 0 1px 0 #FFFFFF;
+}
+
+header li a {
+	/* Fallback Color */
+	background: #E8F4F6;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(#FFFFFF, rgb(247, 129, 247));
+	/* Safari 5.1+, Chrome 10+ */
+	background-image: -webkit-linear-gradient(#FFFFFF, rgb(247, 129, 247)); 
+}
+
+header li a:hover {
+	/* Fallback Color */
+	background: #FFFFFF;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(#FFFFFF, #E8F4F6);
+	/* Safari 5.1+, Chrome 10+ */
+	background-image: -webkit-linear-gradient(#FFFFFF, #E8F4F6); 
+}
+
+header li.active a {
+	color: rgb(168, 33, 168);;
+	-moz-box-shadow: inset 0 2px 3px rgb(247, 129, 247);; -webkit-box-shadow:inset 0 2px 3px rgb(247, 129, 247);; box-shadow: inset 0 2px 10px rgb(247, 129, 247);;
+}
+
+header li.active a {
+	/* Fallback Color */
+	background: #DFF0F3;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(#DFF0F3, #FFFFFF);
+	/* Safari 5.1+, Chrome 10+ */
+	background-image: -webkit-linear-gradient(#DFF0F3, #FFFFFF); 
+}
+
+
+
+/* Main */
+section.home{
+    height:640px;
+    background: rgb(168, 33, 168);
+    -moz-box-shadow: inset 0 5px 9px rgb(247, 129, 247);; -webkit-box-shadow: inset 0 5px 9px rgb(247, 129, 247);; box-shadow: inset 0 5px 9px rgb(247, 129, 247);;
+}
+
+article.main{
+    display:block;
+    float:left;
+    position:relative;
+    width:450px;
+    height:400px;
+    margin:50px -150px;
+}
+
+article.main_text{
+    float:right;
+    width:550px;
+    margin: 150px -200px 0 0;
+}
+
+article.main_text h2{
+    font-size:44px;
+    color:white;
+    line-height:120%;
+    margin: 0 0 20px 0;
+    text-shadow: 0 2px 0 black;
+}
+
+article.main_text p{
+    font-size:30px;
+    color:white;
+    line-height:120%;
+    margin: 0 10px 0 0;
+    text-shadow: 0 2px 0 black;
+}
+
+/* Fields */
+ul.fields{
+    clear:both;
+    margin-left:23vw;
+    margin-bottom: 25vw;
+    margin-top:5vw;
+    -moz-box-shadow: inset 0 5px 9px rgb(247, 129, 247); -webkit-box-shadow: inset 0 5px 9px rgb(247, 129, 247);; box-shadow: inset 0 5px 9px rgb(247, 129, 247);;
+}
+
+ul.fields li{
+    width:300px;
+    margin:0 10px;
+    float:left;
+}
+
+ul.fields h3{
+    font-size:30px;
+    color:rgb(168, 33, 168);;
+    text-indent: 40px;
+}
+
+ul.fields li.field_1 h3{
+    background:url(images/joystick.png) no-repeat;
+}
+
+ul.fields li.field_2 h3{
+    background:url(images/programming.png) no-repeat;
+}
+
+ul.fields li.field_3 h3{
+    background:url(images/web.png) no-repeat;
+}
+
+ul.fields p{
+    border-left:3px solid #CDE0E4;
+    margin:10px 0 10px 15px;
+    padding: 0 0 0 25px;
+    font-size:15px;
+}
+
+.button_1{
+    display:block;
+    width:133px;
+    height:28px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius:50 px;
+    border-radius:50px;
+    text-align:center;
+    line-height:28px;
+    border: 1px solid #ADC0C4;
+    color:rgb(168, 33, 168);;
+    font-weight:bold;
+    font-size:12px;
+    cursor:pointer;
+}
+
+.button_1{
+    /* Fallback Color */
+	background: #DFF0F3;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(#FFFFFF, #EFEFEF);
+	/* Safari 5.1+, Chrome 10+ */
+	background-image: -webkit-linear-gradient(#FFFFFF, #EFEFEF); 
+}
+
+.button_1:hover {
+	background: #FFFFFF;
+}
+
+.button_1:active {
+	background: #EFEFEF;
+}
+
+/* About me */
+section.about{
+    height:400px;
+    background-color: rgb(168, 33, 168);;
+    -moz-box-shadow: inset 0 5px 9px rgb(247, 129, 247);; -webkit-box-shadow: inset 0 5px 9px rgb(247, 129, 247);; box-shadow: inset 0 5px 9px rgb(247, 129, 247);;
+}
+
+article.about_me{
+    clear:both;
+    float:left;
+    width: 1200px;
+    margin:20px -150px;
+}
+
+article.about_me img{
+    float:left;
+    margin: 0 100px 0 0;
+    width:15vw;
+    height:15vw;
+}
+
+article.about_me h3{
+    font-size:30px;
+    color:rgb(247, 129, 247);;
+    margin:10px 0;
+}
+
+article.about_me p{
+    margin:35px 10px 30px 10px;
+    font-size:20px;
+    color:white;
+}
+
+/* Footer */
+footer{
+    clear:both;
+    height:400px;
+    color:rgb(168, 33, 168);;
+}
+
+footer h4{
+    font-size:25px;
+    color:rgb(247, 129, 247);;
+    margin: 0 0 10px 0;
+    clear:both;
+}
+
+footer .column{
+    float:left;
+    width:300px;
+    margin: 20px 10px;
+}
+
+/* Widgets */
+
+article.twitter_widget li{
+    margin: 20px 0;
+}
+
+article.socials_widget li{
+    float:left;
+}
+
+footer input[type=text], footer textarea{
+    width:200px;
+    height:20px;
+    border:none;
+    color:white;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding:5px 10px;
+    margin:10px 0;
+    text-shadow: 0 1px 0 black;
+}
+
+footer ::placeholder{
+    color:white;
+}
+
+footer input[type=text]:focus, footer textarea:focus{
+    outline:none;
+}
+
+footer textarea{
+    height:100px;
+}
+
+footer input[type=text], footer textarea{
+    /* Fallback Color */
+	background: rgb(247, 129, 247);;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(rgb(168, 33, 168), rgb(247, 129, 247));
+	/* Safari 5.1+, Chrome 10+ */
+	background-image: -webkit-linear-gradient(rgb(168, 33, 168), rgb(247, 129, 247)); 
+}
+
+/* Social Links */
+
+article.socials_widget ul li a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	text-indent: -5000px;
+	margin: 0 10px 0 0;
+}
+
+article.socials_widget ul li.facebook a {
+	background: url('images/social_facebook.png') no-repeat;
+}
+
+article.socials_widget ul li.twitter a {
+	background: url('images/social_twitter.png') no-repeat;
+}
+
+article.socials_widget ul li.tumblr a {
+	background: url('images/social_instagram.png') no-repeat;
+}
+
+article.socials_widget ul li.linkedin a {
+	background: url('images/social_linkedin.png') no-repeat;
+}
+
+footer .button_1 {
+	color: #95b3ea;
+}
+
+/* Logo */
+
+footer .logo {
+	float: right;
+	width: 400px;
+	height: 50px;
+	background: url('images/logo.png') no-repeat;
+	margin: -175px -75px 0 0;
+	text-indent: -5000px;
+}
+
+/* Copyright */
+
+section.copyright{
+    background-color:rgb(168, 33, 168);;
+}
+
+section.copyright p.copyright_notice {
+	clear: both;
+	padding: 10px 0 0 0;
+    font-size:large;
+    color:white;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
