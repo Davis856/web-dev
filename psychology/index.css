@@ -268,7 +268,7 @@ ul.fields p{
 /* About me */
 section.about{
     height:400px;
-    background-color: rgb(168, 33, 168);;
+    background-color: rgb(168, 33, 168);
     -moz-box-shadow: inset 0 5px 9px rgb(247, 129, 247);; -webkit-box-shadow: inset 0 5px 9px rgb(247, 129, 247);; box-shadow: inset 0 5px 9px rgb(247, 129, 247);;
 }
 
@@ -288,7 +288,7 @@ article.about_me img{
 
 article.about_me h3{
     font-size:30px;
-    color:rgb(247, 129, 247);;
+    color:rgb(247, 129, 247);
     margin:10px 0;
 }
 
